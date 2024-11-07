@@ -19,6 +19,12 @@ import com.max.indicatorseekbar.fragment.DiscreteFragment
 import com.max.indicatorseekbar.fragment.IndicatorFragment
 import com.max.indicatorseekbar.fragment.JavaBuildFragment
 
+
+/**
+ * MainActivity is the primary activity of the application, responsible for setting up fragments and views.
+ *
+ * Developed by destin55.
+ */
 class MainActivity : BaseActivity() {
 
     private val sType = arrayOf("continuous", "discrete", "custom", "java", "indicator", "donation")
