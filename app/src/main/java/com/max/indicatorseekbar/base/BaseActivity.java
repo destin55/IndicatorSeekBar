@@ -1,4 +1,4 @@
-package com.max.indicatorseekbar.donation;
+package com.max.indicatorseekbar.base;
 
 import android.os.Bundle;
 

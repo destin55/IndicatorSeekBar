@@ -1,18 +1,12 @@
 package com.max.indicatorseekbar
 
-import android.os.Bundle
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager.widget.ViewPager
 import com.google.android.material.tabs.TabLayout
-import com.max.indicatorseekbar.donation.BaseActivity
-import com.max.indicatorseekbar.donation.DonationFragment
+import com.max.indicatorseekbar.base.BaseActivity
 import com.max.indicatorseekbar.fragment.ContinuousFragment
 import com.max.indicatorseekbar.fragment.CustomFragment
 import com.max.indicatorseekbar.fragment.DiscreteFragment
@@ -27,7 +21,7 @@ import com.max.indicatorseekbar.fragment.JavaBuildFragment
  */
 class MainActivity : BaseActivity() {
 
-    private val sType = arrayOf("continuous", "discrete", "custom", "java", "indicator", "donation")
+    private val sType = arrayOf("continuous", "discrete", "custom", "java", "indicator")
     private val mFragmentList = mutableListOf<Fragment>()
 
     override fun getLayoutResId(): Int {
@@ -46,7 +40,6 @@ class MainActivity : BaseActivity() {
         mFragmentList.add(CustomFragment())
         mFragmentList.add(JavaBuildFragment())
         mFragmentList.add(IndicatorFragment())
-        mFragmentList.add(DonationFragment())
     }
 
     private fun initViews() {

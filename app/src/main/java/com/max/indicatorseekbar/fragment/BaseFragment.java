@@ -26,7 +26,7 @@ public abstract class BaseFragment extends Fragment {
             textView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/warkiz/IndicatorSeekBar")));
+                    startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/destin55/IndicatorSeekBar")));
                 }
             });
         }

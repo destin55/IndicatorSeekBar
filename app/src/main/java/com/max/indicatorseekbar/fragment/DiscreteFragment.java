@@ -10,9 +10,6 @@ import com.max.widget.IndicatorSeekBar;
 import com.max.widget.OnSeekChangeListener;
 import com.max.widget.SeekParams;
 
-/**
- * created by zhuangguangquan on  2017/9/6
- */
 
 public class DiscreteFragment extends BaseFragment {
 
